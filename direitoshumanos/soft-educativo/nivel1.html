@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo educativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Playpen+Sans:wght@100;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+</head>   
+   <header>
+    <nav>
+        <a href="index.html" >
+            inicio
+        </a>
+
+        <a href="play.html">
+            Jogo
+         </a>
+       
+       
+        <a href="materiais.html">
+            Materias
+        </a>
+    </nav>
+</header>
+       
+    </header>
+    <body>
+</main>
+    <table class="gameborder-todo">
+
+        <tr><td class="box-type" id="nivel1">
+	<div class="container-painelgame">
+            <section>
+ 		<progress id="barraVida1" value="100" max="100"></progress>
+		<h2 id="contingencia"></h2>
+       
+ 	   </section>
+
+            <section class="cronometro" id="conta-regressiva"></section>
+           
+            <progress id="barraVida2" value="100" max="100"></progress>
+	</div>
+
+
+	<div class="personagens">
+          <img src="imagem/sujeito (1).gif" alt="personagem chamando sujeito" class="sujeito">
+            <img src="imagem/zoro.gif" alt="boot" class="player">
+  
+            <!--<img src="imagem/imgfundonivel2.jpg" alt="fundo de luta" class="imagemdefundo">-->
+            
+           </div>
+        </td>
+       
+        <td rowspan="2" class="gameborder">
+         
+                <div class="box" id="pergunta-box">
+                    <h2 id="pergunta-titulo">Pergunta:</h2>
+                    <p id="pergunta-texto">Texto da pergunta aqui</p>
+                    <h2>Alternativas:</h2>
+                    <ul id="alternativas-lista">
+                      <button class="alternativa" onclick="verificarResposta('resposta_correta')">Alternativa 1</button>
+                      <button class="alternativa" onclick="verificarResposta('resposta_errada')">Alternativa 2</button>
+                      <button class="alternativa" onclick="verificarResposta('resposta_errada')">Alternativa 3</button>
+                      <button class="alternativa" onclick="verificarResposta('resposta_errada')">Alternativa 4</button>
+                    </ul>
+                </div>
+         
+
+        </td>
+    </tr>
+
+   <td class="informação-partida">
+    
+    <div class="Controle-da-partida">
+       
+            <a href="play.html">
+               <img src="imagem/voltar.png" alt="seta de voltar" class="controle-partida">
+            </a>
+        <a href="nivel1.html">
+            <img src="imagem/recarregar.png" alt="seta de recarregar" class="controle-partida">
+        </a>
+   
+       
+        <a href="nivel2.html">
+            <div id="mensagemdeavanço"><img src="imagem/prosseguir.png" alt="seta de avançar" class="controle-partida" >
+            </div>
+            
+        </a>
+        <div id="mensagem-perdeu">Você perdeu!</div>
+       
+       </div>
+    
+</td>
+</table>
+</main>
+</body>
+    <audio src="audio/nivel 1.mpeg" autoplay></audio>
+   <!-- <script>window.alert('Seja bem-vindo(a) ao Soft-Aplicativo')
+    
+</script>
+-->
+
+</html>
